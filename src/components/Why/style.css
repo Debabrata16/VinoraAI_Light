@@ -1,0 +1,117 @@
+.why__container {
+  padding: 6rem;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+/* ── LEFT ── */
+.why__left {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2.2rem;
+}
+
+.why__left h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 0.5rem;
+  color: var(--color-violet);
+}
+
+.why__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.why-feat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s;
+}
+
+.why-feat:hover {
+  color: var(--text-primary);
+}
+
+.why-feat:last-child {
+  border-bottom: none;
+}
+
+.why-feat-icon {
+  font-size: 0.75rem;
+}
+
+/* ── RIGHT (Process) ── */
+.why__right h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 2rem;
+  color: var(--color-violet);
+}
+
+.process__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.process__step {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  cursor: default;
+  transition: var(--transition);
+}
+
+.step-num {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: var(--grad-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 0.2rem;
+  min-width: 2.5rem;
+}
+
+.step-body h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.step-body p {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* ── RESPONSIVE ── */
+@media screen and (max-width: 1024px) {
+  .why__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .why__left {
+    padding: 1.75rem 1.5rem;
+  }
+}

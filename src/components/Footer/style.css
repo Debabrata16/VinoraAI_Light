@@ -1,0 +1,117 @@
+.site-footer {
+  background: var(--color-violet);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 5rem;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.4fr;
+  gap: 3rem;
+  padding: 4rem 0 3rem;
+}
+
+/* ── BRAND ── */
+.footer__logo {
+  height: 36px;
+  width: auto;
+  margin-bottom: 0.9rem;
+}
+
+.footer__tagline {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+  max-width: 260px;
+  margin-bottom: 1.4rem;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer__socials a {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.45);
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.footer__socials a:hover {
+  color: rgba(250, 192, 120, 1);
+}
+
+/* ── COLUMNS ── */
+.footer__col h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.2rem;
+}
+
+.footer__col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer__col ul li a {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+
+.footer__col ul li a:hover {
+  color: rgba(250, 192, 120, 1);
+}
+
+/* ── BOTTOM BAR ── */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.25rem 0;
+}
+
+.footer__bottom__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__bottom span {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__tagline-bottom {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+}
+
+/* ── RESPONSIVE ── */
+@media screen and (max-width: 1024px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 0 2rem;
+  }
+  .footer__bottom__inner {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .footer__tagline {
+    max-width: 100%;
+  }
+}
