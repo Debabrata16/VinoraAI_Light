@@ -65,7 +65,7 @@ const Footer = () => {
           <h3>Contact</h3>
           <ul>
             <li>
-              <a href="tel:+919480253601">📞 +91 9480253601</a>
+              <a href="tel:+918217703077">📞 +91 8217703077</a>
             </li>
             <li>
               <a href="mailto:vinoraaiworkforce@gmail.com">✉️ vinoraaiworkforce@gmail.com</a>

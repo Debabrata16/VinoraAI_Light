@@ -33,12 +33,12 @@ const Banner = () => {
 
           <div className="banner__btns">
             <motion.a
-              href="tel:+919480253601"
+              href="tel:+918217703077"
               className="btn btn-dark"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.96 }}
             >
-              📞 +91 9480253601
+              📞 +91 8217703077
             </motion.a>
             <motion.a
               href="mailto:vinoraaiworkforce@gmail.com"
@@ -49,7 +49,7 @@ const Banner = () => {
               ✉️ vinoraaiworkforce@gmail.com
             </motion.a>
             <motion.a
-              href="https://wa.me/919480253601?text=Hello%20VinoraAI,%20I%20am%20interested%20in%20your%20services"
+              href="https://wa.me/918217703077?text=Hello%20VinoraAI,%20I%20am%20interested%20in%20your%20services"
               target="_blank"
               rel="noreferrer"
               className="btn btn-whatsapp"

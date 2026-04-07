@@ -71,7 +71,7 @@ src/
 ```
 
 ## Contact Info
-- Phone: +91 9480253601
+- Phone: +91 8217703077
 - Email: vinoraaiworkforce@gmail.com
 - WhatsApp float button is always visible bottom-right
 =======

@@ -13,9 +13,9 @@ const Header = () => {
             <AiFillMail />
             <span>vinoraaiworkforce@gmail.com</span>
           </a>
-          <a href="tel:+919480253601">
+          <a href="tel:+918217703077">
             <AiFillPhone />
-            <span>+91 9480253601</span>
+            <span>+91 8217703077</span>
           </a>
         </div>
         <div className="header-socials">

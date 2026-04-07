@@ -123,8 +123,8 @@ const Nav = () => {
               </motion.a>
             ))}
             <div className="mobile-nav-actions">
-              <a href="tel:+919480253601" className="btn btn-outline">
-                📞 +91 9480253601
+              <a href="tel:+918217703077" className="btn btn-outline">
+                📞 +91 8217703077
               </a>
               <a href="#contact" className="btn btn-primary" onClick={() => setMenuOpen(false)}>
                 Get a Quote
