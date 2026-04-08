@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # VinoraAI – React Website
 
 ## ⚠️ IMPORTANT: Do NOT run `npm audit fix --force`
@@ -76,4 +75,4 @@ src/
 - WhatsApp float button is always visible bottom-right
 =======
 # VinoraAI_Light
->>>>>>> 23b63f8ad6ad69880c8e2e764c7518622f8345dd
+
