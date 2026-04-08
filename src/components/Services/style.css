@@ -57,7 +57,7 @@ body {
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 
@@ -120,7 +120,7 @@ body {
 
 .mini-text-big {
   font-family: var(--font-display); /* Syne */
-  font-size: 1.55rem;
+  font-size: 1.4rem;
   font-weight: 600;
 
   line-height: 1.35;
@@ -255,24 +255,74 @@ body {
 
 /* Mobile */
 @media (max-width: 600px) {
-  .services__intro__media {
-    aspect-ratio: 3 / 2; /* 🔥 better crop */
+
+  /* 🔥 KEY FIX — clip slides at the container boundary */
+  .mini-slider-square {
+    position: static;
+    overflow: hidden !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
-  .services__intro__media img {
-    object-position: center top; /* 🔥 fix face cut */
+  /* 🔥 Force swiper to never exceed its parent */
+  .mini-slider-square .swiper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;   /* ← this is what clips the next slide */
   }
 
+  .mini-slider-square .swiper-wrapper {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+  }
+
+  .mini-slider-square .swiper-slide {
+    flex-shrink: 0 !important;
+    width: 100% !important;        /* ← each slide = full width, not bleeding */
+    min-width: 100% !important;
+  }
+   /* ── Section padding ── */
   .services__servicesComp {
-    padding: 1.5rem;
+    padding: 1.5rem 1.25rem;
   }
 
+  /* ── Header: stack vertically ── */
+  .services__comp__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .services__comp__header h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  /* ── Single column grid ── */
   .services__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;   /* ← one card per row, no word breaking */
+    gap: 1rem;
   }
 
-  .mini-text-big {
-    font-size: 1.1rem;
+  /* ── Card fixes ── */
+  .service-card {
+    padding: 1.2rem 1rem;
+    word-break: normal;           /* ← stop aggressive word breaking */
+    overflow-wrap: break-word;
+  }
+
+  .service-card h4 {
+    font-size: 1rem;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .service-card p {
+    font-size: 0.88rem;
+    word-break: normal;
+    hyphens: none;
   }
 }
-

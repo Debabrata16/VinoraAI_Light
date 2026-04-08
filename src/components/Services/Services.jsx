@@ -66,15 +66,19 @@ const Services = () => {
           <div className="mini-slider-square">
             <Swiper
               modules={[Pagination, Autoplay]}
+              slidesPerView={1}
+              spaceBetween={0}
               pagination={{ clickable: true }}
               autoplay={{ delay: 4200, disableOnInteraction: false }}
               speed={900}
-              loop
+              loop={true}
             >
               {miniSlides.map((s, i) => (
                 <SwiperSlide key={i}>
                   <div className="mini-square-content">
-                    <p className="mini-text-big">{s.text}</p>
+                    <div className="mini-text-wrap">
+                      <p className="mini-text-big">{s.text}</p>
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}

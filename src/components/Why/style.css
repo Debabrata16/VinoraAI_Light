@@ -111,6 +111,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    .why__container {
+    padding: 3rem 1.25rem;   /* ← reduces side padding on mobile */
+  }
   .why__left {
     padding: 1.75rem 1.5rem;
   }
