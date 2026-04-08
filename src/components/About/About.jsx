@@ -6,6 +6,7 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const features = [
   "Innovation-driven solutions",
@@ -107,18 +108,16 @@ const About = () => {
           </div>
 
           <div className="about__buttons">
-            <motion.a
-              href="#services"
-              className="btn btn-primary"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.97 }}
-            >
-              Our Services
-            </motion.a>
-            <a href="#services" className="about-arrow-link">
+            <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.97 }}>
+              <Link to="/services" className="btn btn-primary">
+                Our Services
+              </Link>
+            </motion.div>
+
+            <Link to="/services" className="about-arrow-link">
               <span>Learn More</span>
               <AiOutlineArrowDown />
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>
